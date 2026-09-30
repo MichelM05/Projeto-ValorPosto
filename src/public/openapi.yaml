@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Fuel CWB-SJP API
+  description: Public API for fuel prices in Curitiba and São José dos Pinhais.
+  version: 1.0.0
+paths:
+  /api/stations:
+    get:
+      summary: List fuel stations
+      parameters:
+        - name: city
+          in: query
+          schema:
+            type: string
+        - name: fuel_type
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: A list of stations
+  /api/history:
+    get:
+      summary: Price history
+      parameters:
+        - name: city
+          in: query
+          schema:
+            type: string
+        - name: fuel_type
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Historical price data

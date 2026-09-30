@@ -1,0 +1,32 @@
+/src/vendor/
+/src/node_modules/
+/src/public/storage/
+/src/public/hot/
+/src/public/build/
+/src/storage/*.key
+/src/storage/framework/cache/data/*
+/src/storage/framework/sessions/*
+/src/storage/framework/testing/*
+/src/storage/framework/views/*
+/src/storage/logs/*
+/src/database/*.sqlite
+/src/database/*.sqlite-journal
+/src/.env
+/src/.env.backup
+/src/.env.production
+/src/composer.lock
+/src/package-lock.json
+/src/.phpunit.cache
+/src/.phpunit.result.cache
+
+# Docker
+.env
+*.xlsx
+src_old/
+
+# IDE
+.idea/
+.vscode/
+.fleet/
+.zed/
+.nova/
